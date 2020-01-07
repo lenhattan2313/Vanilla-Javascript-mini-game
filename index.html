@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javacript crash code</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-1">
+      <h2>Challenge 1: Your Age in Days</h2>
+      <div class="flex-box-container-1">
+        <div>
+          <button id="challengOneClick" class="btn btn-primary">
+            Click me
+          </button>
+        </div>
+        <div>
+          <button id="challengOneReset" class="btn btn-danger">
+            Rest
+          </button>
+        </div>
+      </div>
+      <div class="flex-box-container-1">
+        <div class="flex-box-result"></div>
+      </div>
+    </div>
+    <div class="container-2">
+      <h2>Challenge 2: Rocks, papers, scissors</h2>
+      <div class="flex-box-container-2" id="flex-box-rps">
+        <img id="rock" src="./images/rock.jpg" alt="rock" class="image" />
+        <img id="paper" src="./images/paper.jpg" alt="paper" class="image" />
+        <img
+          id="scissor"
+          src="./images/scissor.png"
+          alt="scissor"
+          class="image"
+        />
+      </div>
+    </div>
+    <div class="container-3">
+      <h2>Challenge 3: Change color all of Buttons</h2>
+      <div class="flex-box-container-3">
+        <form>
+          <select onchange="changeColor(this)">
+            <option value="random">Random</option>
+            <option value="yellow">Yellow</option>
+            <option value="red">Red</option>
+            <option value="reset">Reset</option>
+          </select>
+        </form>
+        <button class="btn btn-primary">Happy</button>
+        <button class="btn btn-danger">New</button>
+        <button class="btn btn-warning">Year</button>
+        <button class="btn btn-success">2020</button>
+      </div>
+    </div>
+    <div class="container-4">
+      <h2>Challenge 4: Blackjack</h2>
+      <h3><span id="blackjack-result">Let's play game!</span></h3>
+      <div class="flex-box-row-1">
+        <div id="your-box">
+          <h2>You: <span id="your-result-blackjack">0</span></h2>
+        </div>
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-result-blackjack">0</span></h2>
+        </div>
+      </div>
+      <div class="flex-box-row-2">
+        <div>
+          <button id="hit-btn" class="btn btn-primary btn-lg-mr-2">Hit</button>
+          <button id="stand-btn" class="btn btn-warning btn-lg-mr-2">
+            Stand
+          </button>
+          <button id="deal-btn" class="btn btn-danger btn-lg-mr-2">Deal</button>
+        </div>
+      </div>
+      <div class="flex-box-row-3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Loses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td><span id="wins-table">0</span></td>
+            <td><span id="loses-table">0</span></td>
+            <td><span id="draws-table">0</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
